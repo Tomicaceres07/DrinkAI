@@ -1,0 +1,29 @@
+@use "src/styles/base/settings" as *;
+
+.ingredient__image-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  height: 53px;
+  margin: 0px 10px;
+  max-height: 53px;
+  width: 53px;
+  padding: 6px;
+  white-space: nowrap;
+
+  .ingredient__image {
+    width: 100%;
+  }
+
+  .ingredient__name {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+    text-align: center;
+    width: 100%;
+    white-space: pre-line;
+  }
+}

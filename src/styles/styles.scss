@@ -3,3 +3,10 @@
 
 // PAGES
 @use "src/pages/welcome/welcome";
+@use "src/pages/home/home";
+@use "src/pages/generating/generating";
+@use "src/pages/drink/drink";
+
+// COMPONENTS
+@use "src/components/ingredient/ingredient";
+@use "src/components/cyan-button/cyanbutton";

@@ -1,2 +1,105 @@
 @use "src/styles/base/settings" as *;
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.home__container {
+  background-color: $gray;
+  color: $black;
+  min-height: 100vh;
+  padding: 0;
+
+  .home__header {
+    background-color: $cyan;
+    color: $gray;
+    height: 61px;
+    width: 100%;
+
+    .home__header-title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      padding-left: 20px;
+      padding-top: 15px;
+    }
+
+    .home__header-cocktail {
+      display: inline;
+      margin-right: 10px;
+      margin-bottom: 9px;
+      width: 30px;
+    }
+  }
+
+  .home__selected-ingredients {
+    background-color: red;
+    height: 93px;
+  }
+
+  .home__background-image {
+    height: 240px;
+  }
+
+  .home__slider-container {
+    padding-left: 13px;
+    padding-right: 5px;
+    margin-right: 0px;
+    margin-top: 13px;
+    text-align: center;
+
+    .home__col-slider-name {
+      padding: 0;
+      
+      .home__slider-name {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+      }
+    }
+    
+    // Slider
+    .css-53tbrc-MuiSlider-root {
+      color: $black;
+      width: 60%;
+    }
+  }
+
+  .home__slider-container:first-child {
+    border-right: 1px solid #979797;
+  }
+
+  .home__hr {
+    color: #979797;
+    margin: 0px auto;
+    margin-top: 10px;
+    opacity: 1;
+    width: 92%;
+  }
+
+  .home__ingredients-div {
+    margin: 0px auto;
+    width: 90%;
+    
+    .home__recommended-title {
+      color: black;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0em;
+      margin-top: 10px;
+    }
+
+    .home__recommended-div {
+      height: 82px;
+      overflow-y: initial;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+
+  }
+  
+  .home__end {
+    min-height: 9vh;
+  }
+
+  
+}
