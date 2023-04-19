@@ -36,3 +36,45 @@
   font-weight: 400;
   letter-spacing: 0.5px;
 }
+
+@media (min-width: 576px) {
+  .ingredient__image-container {
+    height: 65px;
+    margin: 0px 13px;
+    max-height: 65px;
+    width: 65px;
+
+    .ingredient__name {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ingredient__image-container {
+    .ingredient__name {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .ingredient__image-container {
+    .ingredient__name {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .ingredient__image-container {
+    margin: 0px 18px;
+
+    .ingredient__name {
+      font-size: 16px;
+      margin-top: 12px;
+    }
+  }
+}

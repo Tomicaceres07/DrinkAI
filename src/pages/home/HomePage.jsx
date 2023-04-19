@@ -15,9 +15,8 @@ export const HomePage = () => {
         <p>Put here the selected ingredients</p>
         {/* TODO: If there isn't selected ingredients, put text saying "No selected ingredients", otherwise, show ingredients. */}
       </div>
-      
-      <img src="src/assets/background/homeDrink.png" alt="Background Drinks" className="home__background-image"/>
-      <Row className="mw-100">
+      <div className="home__background-image"></div>
+      <Row className="home__slider-row">
         <Col className="home__slider-container">
           <Row>
             <Col className="home__col-slider-name"><span className="home__slider-name">Pega poco</span></Col>

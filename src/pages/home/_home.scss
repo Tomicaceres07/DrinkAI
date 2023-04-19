@@ -5,6 +5,7 @@
   color: $black;
   min-height: 100vh;
   padding: 0;
+  width: 100%;
 
   .home__header {
     background-color: $cyan;
@@ -30,12 +31,21 @@
   }
 
   .home__selected-ingredients {
-    background-color: red;
+    border: 1px solid red;
     height: 93px;
   }
 
   .home__background-image {
+    background: url("/src/assets/background/homeDrink.png");
+    background-size: cover;
     height: 240px;
+    min-width: 300px;
+    max-width: 360px;
+    margin: 0px auto;
+  }
+
+  .home__slider-row {
+    max-width: 100%;
   }
 
   .home__slider-container {
@@ -90,8 +100,119 @@
   }
   
   .home__end {
-    min-height: 9vh;
+    min-height: 12vh;
   }
+}
 
-  
+@media (min-width: 576px) {
+  .home__container {
+
+    .home__header .home__header-title {
+      font-size: 32px;
+      padding-left: 10vw;
+    }
+
+    .home__background-image {
+      height: 300px;
+      max-width: 450px;
+    }
+
+    .home__slider-row {
+      margin: 0px 10vw;
+
+      .home__slider-container .home__col-slider-name .home__slider-name {
+        font-size: 14px;
+      }
+    }
+
+    .home__selected-ingredients {
+      padding: 0px 10vw;
+    }
+
+    .home__ingredients-div {
+      width: 85%;
+
+      .home__recommended-title {
+        font-size: 24px;
+      }
+
+      .home__recommended-div {
+        height: 100px;
+      }
+    }
+
+    .home__end {
+      min-height: 13vh;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .home__container {
+
+    .home__background-image {
+      height: 333px;
+      max-width: 500px;
+    }
+
+    .home__slider-row {
+      margin: 0px 20vw;
+
+      .home__slider-container .home__col-slider-name .home__slider-name {
+        font-size: 16px;
+      }
+    }
+
+    .home__ingredients-div {
+      width: 65%;
+
+      .home__recommended-title {
+        font-size: 26px;
+
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .home__container {
+
+    .home__background-image {
+      height: 467px;
+      max-width: 700px;
+    }
+
+    .home__slider-row {
+
+      .home__slider-container .home__col-slider-name .home__slider-name {
+        font-size: 18px;
+      }
+    }
+
+    .home__ingredients-div {
+      .home__recommended-title {
+        font-size: 28px;
+      }
+    }
+
+    .home__end {
+      min-height: 14vh;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .home__container {
+    .home__slider-row {
+      margin: 0px 25vw;
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .home__container {
+    .home__slider-row {
+      margin: 0px 30vw;
+    }
+  }
 }

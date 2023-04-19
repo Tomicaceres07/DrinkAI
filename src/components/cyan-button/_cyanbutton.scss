@@ -2,7 +2,8 @@
 
 .cyanbutton__container {
   position: fixed;
-  left: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   top: 92%;
   text-align: center;
   
@@ -18,7 +19,7 @@
     letter-spacing: 0.5px;
     margin-top: 15px;
     padding: 5px 10px;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -29,3 +30,23 @@
     margin-top: 0px;
   }
 }
+
+
+@media (min-width: 576px) {
+  .cyanbutton__container {
+    .cyanbutton__button {
+      font-size: 22px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .cyanbutton__container {
+    .cyanbutton__button {
+      font-size: 24px;
+      padding: 15px 25px;
+    }
+  }
+}
+  
