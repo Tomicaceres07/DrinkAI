@@ -9,6 +9,7 @@ export const WelcomePage = () => {
       {/* TODO: Make every drink a button, and call a function passing the name of the drink. It would append to an array if it's not there, and remove it if it's already there. */}
       <Row className="welcome__row text-center">
         <Col className="welcome__col">
+          {/* TODO: Make shadows conditionally, if it's not selected, put shadow, otherwise don't */}
           <img src="src/assets/drinks/Gin.png" alt="Gin" className="welcome__drink-image"/>
           <p className="welcome__drink-name">Gin Tonic</p>
         </Col>

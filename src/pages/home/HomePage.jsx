@@ -1,7 +1,8 @@
 import { Slider } from '@mui/material';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Ingredients } from '../../components/ingredients/Ingredients';
-import { CyanButton } from '../../components/cyan-button/CyanButton';
+import { Ingredients } from 'src/components/ingredients/Ingredients';
+import { CyanButton } from 'src/components/cyan-button/CyanButton';
+import { Hr } from 'src/components/hr/Hr';
 
 export const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ export const HomePage = () => {
         <p>Put here the selected ingredients</p>
         {/* TODO: If there isn't selected ingredients, put text saying "No selected ingredients", otherwise, show ingredients. */}
       </div>
+      
       <img src="src/assets/background/homeDrink.png" alt="Background Drinks" className="home__background-image"/>
       <Row className="mw-100">
         <Col className="home__slider-container">
@@ -50,7 +52,7 @@ export const HomePage = () => {
           />
         </Col>
       </Row>
-      <hr className="home__hr"/>
+      <Hr />
       <Ingredients 
         title="Recomendados"
       />

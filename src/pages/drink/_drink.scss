@@ -1,0 +1,148 @@
+@use "src/styles/base/settings" as *;
+
+@mixin drink__details-title {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+@mixin container-w-90 {
+  margin: 0px auto;
+  width: 90%;
+}
+
+.drink__container {
+  background-color: $gray;
+  color: $black;
+  min-height: 100vh;
+  padding: 0;
+
+  .drink__header {
+    background-color: $cyan;
+    height: 61px;
+    width: 100%;
+    
+    .drink__header-link {
+      color: $gray;
+      text-decoration: none;
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 61px;
+      letter-spacing: 0.5px;
+      text-align: left;
+    }
+
+    .drink__header-back-arrow {
+      margin: 0px 10px;
+      margin-bottom: 5px;
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  .drink__image-background {
+    height: 319px;
+  }
+
+  .drink__details-div {
+    background-color: $gray;
+    border-radius: 30px;
+    min-height: 50vh;
+    padding-top: 30px;
+    position: absolute;
+    top: 322px;
+    width: 100%;
+    z-index: 4;
+
+    .drink__details-header {
+      margin: 0px auto;
+      width: 80%;
+      
+      .drink__details-name {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0em;
+      }
+
+      .drink__details-new {
+        color: $cyan;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        margin-bottom: 13px;
+        text-align: left;
+      }
+
+      .drink__details-probability {
+        color: #000000;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .drink__details-description {
+        color: rgba(0, 0, 0, 0.80);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+
+    .drink__details-recommended {
+      @include container-w-90;
+
+      .drink__details-recommended-title {
+        @include drink__details-title;
+      }
+
+      .drink__details-recommended-col {
+        text-align: center;
+      }
+
+      .drink__details-recommended-col:first-child {
+        margin-left: 22px;
+      }
+
+      .drink__details-recommended-col:last-child {
+        margin-right: 22px;
+      }
+    }
+
+    .drink__details-recipe {
+      @include container-w-90;
+      
+      .drink__details-recipe-title {
+        @include drink__details-title;
+      }
+
+      .drink__details-recipe-description {
+        color: #000000B2;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        margin: 0px auto;
+        text-align: left;
+        width: 92%;
+      }
+    }
+  }
+
+  .drink__hr {
+    margin-top: 15px;
+  }
+}

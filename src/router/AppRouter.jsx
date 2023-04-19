@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { DrinkPage } from 'src/pages/drink/GeneratedDrinkPage';
+import { DrinkPage } from 'src/pages/drink/DrinkPage';
 import { HomePage } from 'src/pages/home/HomePage';
 import { WelcomePage } from 'src/pages/welcome/WelcomePage';
 import { Generating } from '../pages/generating/Generating';
