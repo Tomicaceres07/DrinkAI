@@ -11,7 +11,7 @@ export const DrinkPage = () => {
       <div className="drink__header">
         <Link to="/home" className="drink__header-link"><img src="src/assets/icons/back.png" alt="Back arrow" className="drink__header-back-arrow"/>Volver al inicio</Link>
       </div>
-      <img src="src/assets/background/generatedDrink.png" alt="Generated Drink" className="drink__image-background"/>
+      <div className="drink__image-background"></div>
       <div className="drink__details-div">
         <div className="drink__details-header">
           {/* TODO: Fill with ingredient data from API */}
@@ -32,6 +32,7 @@ export const DrinkPage = () => {
                 fileName="vodka"
                 name="Vodka"
                 effect="Para más pega"
+                page="drink"
               />
             </Col>
             <Col className="drink__details-recommended-col">
@@ -39,6 +40,7 @@ export const DrinkPage = () => {
                 fileName="lemon"
                 name="Limón"
                 effect="Para más amargor"
+                page="drink"
               />
             </Col>
           </Row>

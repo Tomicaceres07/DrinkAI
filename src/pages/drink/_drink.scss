@@ -17,7 +17,7 @@
 }
 
 .drink__container {
-  background-color: $gray;
+  background-color: white;
   color: $black;
   min-height: 100vh;
   padding: 0;
@@ -45,9 +45,13 @@
       width: 18px;
     }
   }
-
   .drink__image-background {
+    background: url("/src/assets/background/generatedDrink.png");
+    background-size: cover;
     height: 319px;
+    min-width: 300px;
+    max-width: 360px;
+    margin: 0px auto;
   }
 
   .drink__details-div {
@@ -93,11 +97,11 @@
 
       .drink__details-description {
         color: rgba(0, 0, 0, 0.80);
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 400;
         line-height: 14px;
         letter-spacing: 0em;
-        text-align: center;
+        text-align: justify;
       }
     }
 
@@ -146,3 +150,118 @@
     margin-top: 15px;
   }
 }
+
+
+@media (min-width: 576px) {
+  .drink__container {
+    .drink__header {
+      .drink__header-link {
+        padding: 0px 20px;
+      }
+    }
+
+    .drink__details-div {
+      .drink__details-header {
+        width: 60%;
+
+        .drink__details-name {
+          font-size: 38px;
+        }
+
+        .drink__details-new,
+        .drink__details-probability {
+          font-size: 22px;
+        }
+
+        .drink__details-description {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      .drink__details-recommended {
+        width: 75%;
+
+        .drink__details-recommended-title {
+          font-size: 22px;
+        }
+      }
+      
+      .drink__details-recipe {
+        width: 75%;
+
+        .drink__details-recipe-title {
+          font-size: 22px;
+        }
+        .drink__details-recipe-description {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      } 
+    } 
+  }
+}
+
+@media (min-width: 992px) {
+  .drink__container {
+    .drink__header {
+      .drink__header-link {
+        font-size: 28px;
+        padding: 0px 100px;
+      }
+    }
+
+    .drink__details-div {
+      .drink__details-header {
+        width: 50%;
+
+        .drink__details-name {
+          font-size: 40px;
+        }
+
+        .drink__details-new,
+        .drink__details-probability {
+          font-size: 24px;
+        }
+
+        .drink__details-description {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+
+      .drink__details-recommended {
+        width: 55%;
+
+        .drink__details-recommended-title {
+          font-size: 24px;
+          margin-bottom: 30px;
+          margin-top: 20px;
+        }
+      }
+      
+      .drink__details-recipe {
+        width: 55%;
+
+        .drink__details-recipe-title {
+          font-size: 24px;
+          margin-bottom: 15px;
+          margin-top: 20px;
+        }
+        .drink__details-recipe-description {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      } 
+    } 
+  }
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1700px) {
+
+}
+

@@ -24,7 +24,8 @@
 }
 
 .cyanbutton__container__drink {
-  position: initial;
+  position: relative;
+  margin-top: 15px;
   
   .cyanbutton__button__drink {
     margin-top: 0px;
@@ -38,6 +39,10 @@
       font-size: 22px;
       padding: 10px 20px;
     }
+  }
+
+  .cyanbutton__container__drink {
+    margin-top: 20px;
   }
 }
 
